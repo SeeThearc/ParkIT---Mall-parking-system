@@ -87,8 +87,8 @@ function VehicleSearch({onVehicleEntry}) {
                     <p><strong>Plate:</strong> {result.numberplate}</p>
                     <p><strong>Type:</strong> {result.type}</p>
                     <p><strong>Slot:</strong> {result.slotnumber || "Not assigned"}</p>
-                    <p><strong>InTime:</strong> {result.intime}</p>
-                    <p><strong>ExitTime:</strong> {result.exittime}</p>
+                    <p><strong>InTime:</strong> {new Date(result.intime).toLocaleString()}</p>
+                    <p><strong>ExitTime:</strong> {new Date(result.exittime).toLocaleString()}</p>
                 </div>
             )}
 
