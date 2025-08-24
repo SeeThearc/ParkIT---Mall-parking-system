@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const baseurl = import.meta.env.VITE_REACT_APP_BASEURL;
+const baseurl = `${import.meta.env.VITE_REACT_APP_BASEURL}/api`;
 
 function Dashboard({ refreshTrigger }) {
     const [data, setData] = useState(null);

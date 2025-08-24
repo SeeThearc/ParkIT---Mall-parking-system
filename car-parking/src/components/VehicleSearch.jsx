@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import Checkout from "./Checkout";
 
-const baseurl = import.meta.env.VITE_REACT_APP_BASEURL;
+const baseurl = `${import.meta.env.VITE_REACT_APP_BASEURL}/api`;
 
 function VehicleSearch({onVehicleEntry}) {
     const [searchPlate, setSearchPlate] = useState("");
