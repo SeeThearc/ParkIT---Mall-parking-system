@@ -104,7 +104,7 @@ function VehicleSearch({onVehicleEntry}) {
                     </ul>
                 </div>
             )}
-            <Checkout baseurl="http://localhost:5000/api" onVehicleEntry={onVehicleEntry}/>
+            <Checkout baseurl={baseurl} onVehicleEntry={onVehicleEntry}/>
         </div>
     );
 }
