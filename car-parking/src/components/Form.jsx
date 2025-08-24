@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import VehicleSearch from "./VehicleSearch";
 
-const baseurl = "http://localhost:5000/api";
+const baseurl = import.meta.env.VITE_REACT_APP_BASEURL;
 const enterVehicle = (data) => axios.post(`${baseurl}/entry`, data);
 
 function Form({ onVehicleEntry }) {
